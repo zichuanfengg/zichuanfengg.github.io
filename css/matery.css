@@ -164,7 +164,7 @@ body.DarkMode .skillbar .skill-bar-percent {
     border-radius: 50%;
     position: fixed;
     right: 15px;
-    bottom: 195px;
+    bottom: 70px;/*按钮位置*/
     margin-bottom: 0;
     z-index: 900;
 }
