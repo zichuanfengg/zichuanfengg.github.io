@@ -164,7 +164,7 @@ body.DarkMode .skillbar .skill-bar-percent {
     border-radius: 50%;
     position: fixed;
     right: 15px;
-    bottom: 70px;/*按钮位置*/
+    bottom: 170px;/*按钮位置*/
     margin-bottom: 0;
     z-index: 900;
 }
@@ -487,6 +487,7 @@ mark {
 
 .bg-color {
     background-image: linear-gradient(to right, #807aed 0%, #1fa3b9 100%);
+	opacity: 0.8;
 }
 
 .text-color {
