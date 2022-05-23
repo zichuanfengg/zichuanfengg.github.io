@@ -199,7 +199,7 @@ body.DarkMode .stars-con {
     width: 100vw;
     overflow: hidden;
     z-index: -111;
-    background: linear-gradient(#15151b, #1b1b2e, #231832);
+    /* background: linear-gradient(#15151b, #1b1b2e, #231832); */
 }
 
 body.DarkMode #stars {
