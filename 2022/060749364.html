@@ -5,10 +5,7 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="快速搭建一个博客or网站, 梓川枫">
-    <meta name="description" content="一.更改主题1.下载主题点击这里下载主题,当然你也可以再你的themes文件夹下使用git clone命令下载。 
-git clone https://github.com/blinkfox/hexo-theme-matery.git
-
-2">
+    <meta name="description" content="搭建一个属于自己的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -424,12 +421,25 @@ git clone https://github.com/blinkfox/hexo-theme-matery.git
             <div class="row tag-cate">
                 <div class="col s7">
                     
-                          <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
-                          </div>
+                    <div class="article-tag">
+                        
+                            <a href="/tags/web-css/">
+                                <span class="chip bg-color">web,css</span>
+                            </a>
+                        
+                    </div>
                     
                 </div>
                 <div class="col s5 right-align">
+                    
+                    <div class="post-cate">
+                        <i class="fas fa-bookmark fa-fw icon-category"></i>
+                        
+                            <a href="/categories/web/" class="post-category">
+                                web
+                            </a>
+                        
+                    </div>
                     
                 </div>
             </div>
@@ -452,7 +462,7 @@ git clone https://github.com/blinkfox/hexo-theme-matery.git
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    324
+                    317
                 </div>
                 
 
@@ -480,11 +490,11 @@ git clone https://github.com/blinkfox/hexo-theme-matery.git
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="一-更改主题"><a href="#一-更改主题" class="headerlink" title="一.更改主题"></a>一.更改主题</h1><h2 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="1.下载主题"></a>1.下载主题</h2><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">点击这里下载主题</a>,当然你也可以再你的themes文件夹下使用git clone命令下载。 </p>
-<pre><code>git clone https://github.com/blinkfox/hexo-theme-matery.git
+<pre class=" language-bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/blinkfox/hexo-theme-matery.git
 </code></pre>
 <h2 id="2-修改配置文件"><a href="#2-修改配置文件" class="headerlink" title="2.修改配置文件"></a>2.修改配置文件</h2><p>修改 Hexo 根目录下的 _config.yml 的 theme 的值：theme: hexo-theme-matery 也就是你主题文件的文件夹名。 </p>
 <p> 修改完成后 执行 </p>
-<pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s
+<pre class=" language-bash"><code class="language-bash">$ hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo s
 </code></pre>
 <p> 即可在本地看到主题了。 </p>
 <p>_config.yml 文件的其它修改建议: </p>
@@ -493,15 +503,15 @@ git clone https://github.com/blinkfox/hexo-theme-matery.git
 <li>建议修改两个 per_page 的分页条数值为 6 的倍数，如：12、18 等，这样文章列表在各个屏幕下都能较好的显示. </li>
 <li>如果你是中文用户，建议修改language的值为zh-CN</li>
 </ul>
-<h1 id="二-新建页面"><a href="#二-新建页面" class="headerlink" title="二.新建页面"></a>二.新建页面</h1><h2 id="1-新建分类页面"><a href="#1-新建分类页面" class="headerlink" title="1.新建分类页面"></a>1.新建分类页面</h2><p>categories 页是用来展示所有分类的&#96;页面，如果在你的博客 source 目录下还没有 categories&#x2F;index.md 文件，那么你就需要新建一个，命令如下：</p>
-<pre><code>hexo new page &quot;categories&quot;
+<h1 id="二-新建页面"><a href="#二-新建页面" class="headerlink" title="二.新建页面"></a>二.新建页面</h1><h2 id="1-新建分类页面"><a href="#1-新建分类页面" class="headerlink" title="1.新建分类页面"></a>1.新建分类页面</h2><p>categories 页是用来展示所有分类的页面，如果在你的博客 source 目录下还没有 categories&#x2F;index.md 文件，那么你就需要新建一个，命令如下：</p>
+<pre class=" language-bash"><code class="language-bash">$ hexo new page <span class="token string">"categories"</span>
 </code></pre>
 <p>编辑你刚刚新建的页面文件 &#x2F;source&#x2F;categories&#x2F;index.md，至少需要以下内容：</p>
-<pre><code>---
+<pre class=" language-md"><code class="language-md">---
 title: categories
 date: 2018-09-30 17:25:30
-type: &quot;categories&quot;
-layout: &quot;categories&quot;
+type: "categories"
+layout: "categories"
 ---
 </code></pre>
 
@@ -567,7 +577,11 @@ layout: &quot;categories&quot;
                 <div class="post-meta__tag-list" style="display: inline-block;">
                     
                         <div class="article-tag">
-                            <span class="chip bg-color">无标签</span>
+                            
+                                <a href="/tags/web-css/">
+                                    <span class="chip bg-color">web,css</span>
+                                </a>
+                            
                         </div>
                     
                 </div>
@@ -1022,7 +1036,7 @@ layout: &quot;categories&quot;
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            
+                            搭建一个属于自己的博客
                         
                     </div>
                     <div class="publish-info">
@@ -1031,13 +1045,25 @@ layout: &quot;categories&quot;
                             </span>
                         <span class="publish-author">
                             
-                            <i class="fas fa-user fa-fw"></i>
-                            梓川枫
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/categories/web/" class="post-category">
+                                    web
+                                </a>
+                            
                             
                         </span>
                     </div>
                 </div>
 
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/tags/web-css/">
+                        <span class="chip bg-color">web,css</span>
+                    </a>
+                    
+                </div>
                 
             </div>
         </div>

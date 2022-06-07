@@ -8,9 +8,21 @@
       <link href="/2022/060749364.html"/>
       <url>/2022/060749364.html</url>
       
-        <content type="html"><![CDATA[<h1 id="一-更改主题"><a href="#一-更改主题" class="headerlink" title="一.更改主题"></a>一.更改主题</h1><h2 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="1.下载主题"></a>1.下载主题</h2><p><a href="https://github.com/blinkfox/hexo-theme-matery">点击这里下载主题</a>,当然你也可以再你的themes文件夹下使用git clone命令下载。 </p><pre><code>git clone https://github.com/blinkfox/hexo-theme-matery.git</code></pre><h2 id="2-修改配置文件"><a href="#2-修改配置文件" class="headerlink" title="2.修改配置文件"></a>2.修改配置文件</h2><p>修改 Hexo 根目录下的 _config.yml 的 theme 的值：theme: hexo-theme-matery 也就是你主题文件的文件夹名。 </p><p> 修改完成后 执行 </p><pre><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo s</code></pre><p> 即可在本地看到主题了。 </p><p>_config.yml 文件的其它修改建议: </p><ul><li>请修改_config.yml 的 url 的值为你的网站主 URL（如：<a href="http://xxx.github.io).如果还没有就不用管/">http://xxx.github.io）。如果还没有就不用管</a>. </li><li>建议修改两个 per_page 的分页条数值为 6 的倍数，如：12、18 等，这样文章列表在各个屏幕下都能较好的显示. </li><li>如果你是中文用户，建议修改language的值为zh-CN</li></ul><h1 id="二-新建页面"><a href="#二-新建页面" class="headerlink" title="二.新建页面"></a>二.新建页面</h1><h2 id="1-新建分类页面"><a href="#1-新建分类页面" class="headerlink" title="1.新建分类页面"></a>1.新建分类页面</h2><p>categories 页是用来展示所有分类的&#96;页面，如果在你的博客 source 目录下还没有 categories&#x2F;index.md 文件，那么你就需要新建一个，命令如下：</p><pre><code>hexo new page &quot;categories&quot;</code></pre><p>编辑你刚刚新建的页面文件 &#x2F;source&#x2F;categories&#x2F;index.md，至少需要以下内容：</p><pre><code>---title: categoriesdate: 2018-09-30 17:25:30type: &quot;categories&quot;layout: &quot;categories&quot;---</code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="一-更改主题"><a href="#一-更改主题" class="headerlink" title="一.更改主题"></a>一.更改主题</h1><h2 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="1.下载主题"></a>1.下载主题</h2><p><a href="https://github.com/blinkfox/hexo-theme-matery">点击这里下载主题</a>,当然你也可以再你的themes文件夹下使用git clone命令下载。 </p><pre class=" language-bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/blinkfox/hexo-theme-matery.git</code></pre><h2 id="2-修改配置文件"><a href="#2-修改配置文件" class="headerlink" title="2.修改配置文件"></a>2.修改配置文件</h2><p>修改 Hexo 根目录下的 _config.yml 的 theme 的值：theme: hexo-theme-matery 也就是你主题文件的文件夹名。 </p><p> 修改完成后 执行 </p><pre class=" language-bash"><code class="language-bash">$ hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo s</code></pre><p> 即可在本地看到主题了。 </p><p>_config.yml 文件的其它修改建议: </p><ul><li>请修改_config.yml 的 url 的值为你的网站主 URL（如：<a href="http://xxx.github.io).如果还没有就不用管/">http://xxx.github.io）。如果还没有就不用管</a>. </li><li>建议修改两个 per_page 的分页条数值为 6 的倍数，如：12、18 等，这样文章列表在各个屏幕下都能较好的显示. </li><li>如果你是中文用户，建议修改language的值为zh-CN</li></ul><h1 id="二-新建页面"><a href="#二-新建页面" class="headerlink" title="二.新建页面"></a>二.新建页面</h1><h2 id="1-新建分类页面"><a href="#1-新建分类页面" class="headerlink" title="1.新建分类页面"></a>1.新建分类页面</h2><p>categories 页是用来展示所有分类的页面，如果在你的博客 source 目录下还没有 categories&#x2F;index.md 文件，那么你就需要新建一个，命令如下：</p><pre class=" language-bash"><code class="language-bash">$ hexo new page <span class="token string">"categories"</span></code></pre><p>编辑你刚刚新建的页面文件 &#x2F;source&#x2F;categories&#x2F;index.md，至少需要以下内容：</p><pre class=" language-md"><code class="language-md">---title: categoriesdate: 2018-09-30 17:25:30type: "categories"layout: "categories"---</code></pre>]]></content>
       
       
+      <categories>
+          
+          <category> web </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> web,css </tag>
+            
+        </tags>
       
     </entry>
     
