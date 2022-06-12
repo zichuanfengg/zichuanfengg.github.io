@@ -302,7 +302,7 @@
 <script src="/libs/cryptojs/crypto-js.min.js"></script>
 <script>
     (function() {
-        let pwd = '9c8197771d54222e201c0200e8a131140ae917bb1cce889c567afea5520b12f6';
+        let pwd = '';
         if (pwd && pwd.length > 0) {
             if (pwd !== CryptoJS.SHA256(prompt('请输入访问本文章的密码')).toString(CryptoJS.enc.Hex)) {
                 alert('密码错误，将返回主页！');
@@ -468,7 +468,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2022-06-07
+                    2022-06-12
                 </div>
                 
 
@@ -503,11 +503,11 @@
         <div class="card-content article-card-content">
             <div id="articleContent">
                 <h1 id="一-更改主题"><a href="#一-更改主题" class="headerlink" title="一.更改主题"></a>一.更改主题</h1><h2 id="1-下载主题"><a href="#1-下载主题" class="headerlink" title="1.下载主题"></a>1.下载主题</h2><p><a target="_blank" rel="noopener" href="https://github.com/blinkfox/hexo-theme-matery">点击这里下载主题</a>,当然你也可以再你的themes文件夹下使用git clone命令下载。</p>
-<pre class=" language-bash"><code class="language-bash">$ <span class="token function">git</span> clone https://github.com/blinkfox/hexo-theme-matery.git
+<pre class=" language-bash"><code class="language-bash"><span class="token function">git</span> clone https://github.com/blinkfox/hexo-theme-matery.git
 </code></pre>
 <h2 id="2-修改配置文件"><a href="#2-修改配置文件" class="headerlink" title="2.修改配置文件"></a>2.修改配置文件</h2><p>修改 Hexo 根目录下的 _config.yml 的 theme 的值：theme: hexo-theme-matery 也就是你主题文件的文件夹名。 </p>
 <p> 修改完成后 执行 </p>
-<pre class=" language-bash"><code class="language-bash">$ hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo s
+<pre class=" language-bash"><code class="language-bash">hexo clean <span class="token operator">&amp;&amp;</span> hexo g <span class="token operator">&amp;&amp;</span> hexo s
 </code></pre>
 <p> 即可在本地看到主题了。 </p>
 <p>_config.yml 文件的其它修改建议: </p>
@@ -517,7 +517,7 @@
 <li>如果你是中文用户，建议修改language的值为zh-CN</li>
 </ul>
 <h1 id="二-新建页面"><a href="#二-新建页面" class="headerlink" title="二.新建页面"></a>二.新建页面</h1><h2 id="1-新建分类页面"><a href="#1-新建分类页面" class="headerlink" title="1.新建分类页面"></a>1.新建分类页面</h2><p>categories 页是用来展示所有分类的页面，如果在你的博客 source 目录下还没有 categories&#x2F;index.md 文件，那么你就需要新建一个，命令如下：</p>
-<pre class=" language-bash"><code class="language-bash">$ hexo new page <span class="token string">"categories"</span>
+<pre class=" language-bash"><code class="language-bash">hexo new page <span class="token string">"categories"</span>
 </code></pre>
 <p>编辑你刚刚新建的页面文件 &#x2F;source&#x2F;categories&#x2F;index.md，至少需要以下内容：</p>
 <pre class=" language-md"><code class="language-md">---
